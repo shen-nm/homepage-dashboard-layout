@@ -7,4 +7,5 @@ The metrics on top are from Glances: https://github.com/nicolargo/glances
 
 
 ## Screenshot:
-<img width="2478" height="1394" alt="image" src="https://github.com/user-attachments/assets/09abe826-746c-4cd8-9efe-a5c0e8832405" />
+<img width="2478" height="1394" alt="image" src="https://github.com/user-attachments/assets/89775fda-becc-47f2-8c99-d66694a1fe9a" />
+
