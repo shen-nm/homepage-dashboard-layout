@@ -1,0 +1,99 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/services/
+
+- Monitoring:
+    - CPU Usage:
+        widget:
+          type: glances
+          url: http://192.168.8.100:61208
+          metric: cpu
+    - Memory Usage:
+        widget:
+          type: glances
+          url: http://192.168.8.100:61208
+          metric: memory
+    - Network Usage:
+        widget:
+          type: glances
+          url: http://192.168.8.100:61208
+          metric: network:eno1
+    - Processes:
+         widget:
+           type: glances
+           url: http://192.168.8.100:61208
+           metric: process
+    - NVMe SSD I/O:
+        widget:
+          type: glances
+          url: http://192.168.8.100:61208
+          metric: disk:nvme0n1
+    - NVMe SSD Storage:
+        widget:
+          type: glances
+          url: http://192.168.8.100:61208
+          metric: fs:/
+    - CPU Temp:  
+        widget:
+          type: glances
+          url: http://192.168.8.100:61208
+          metric: sensor:Package id 0
+    - NVMe SSD Temp:
+        widget:
+          type: glances
+          url: http://192.168.8.100:61208
+          metric: sensor:Composite
+          
+- Home Lab:
+    - Proxmox:
+        href: https://192.168.8.100:8006
+        icon: proxmox.png
+        siteMonitor: https://192.168.8.100:8006
+        widget:
+          type: proxmox
+          url: https://192.168.8.100:8006
+          username: "{{HOMEPAGE_VAR_PROXMOX_API_USERNAME}}"
+          password: "{{HOMEPAGE_VAR_PROXMOX_API}}"
+          node: home-lab
+          tlsInsecure: true
+    - Nginx:
+        href: http://192.168.8.106:81 
+        icon: nginx.png
+        siteMonitor: http://192.168.8.106:81
+        widget:
+          type: npm
+          url: http://192.168.8.106:81
+          username: "{{HOMEPAGE_VAR_NGINX_USERNAME}}"
+          password: "{{HOMEPAGE_VAR_NGINX_PASSWORD}}"
+    - Grafana:
+        href: http://192.168.8.102:3000/d/rYdddlPWk/node-exporter-full?orgId=1&refresh=5s
+        icon: grafana.png
+        siteMonitor: http://192.168.8.102:3000
+        widget:
+          type: grafana
+          version: 2
+          url: http://192.168.8.102:3000
+          username: "{{HOMEPAGE_VAR_GRAFANA_USERNAME}}"
+          password: "{{HOMEPAGE_VAR_GRAFANA_PASSWORD}}"
+    - Pi-hole:
+        href: http://192.168.8.110/admin/
+        icon: pi-hole.png
+        siteMonitor: http://192.168.8.110/admin/
+      #  widget:
+      #    type: pihole
+      #    url: http://192.168.8.110
+      #    version: 6
+
+- Media:
+    - Navidrome:
+        href: "{{HOMEPAGE_VAR_NAVIDROME_HREF}}"
+        icon: navidrome.png
+        siteMonitor: http://192.168.8.103:4533
+        widget:
+          type: navidrome
+          url: http://192.168.8.103:4533
+          user: "{{HOMEPAGE_VAR_NAVIDROME_USERNAME}}"
+          token: "{{HOMEPAGE_VAR_NAVIDROME_TOKEN}}"
+          salt: "{{HOMEPAGE_VAR_NAVIDROME_SALT}}"
+
+

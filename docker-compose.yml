@@ -1,0 +1,15 @@
+services:
+  homepage:
+    image: ghcr.io/gethomepage/homepage:latest
+    container_name: homepage
+    ports:
+      - 3000:3000
+    env_file:
+      - .env
+    volumes:
+      - /opt/homepage/config:/app/config
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /opt/homepage/public:/app/public/images
+    environment:
+      - HOMEPAGE_ALLOWED_HOSTS=*
+    restart: unless-stopped

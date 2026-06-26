@@ -1,0 +1,27 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/settings/
+
+providers:
+  openweathermap: openweathermapapikey
+  weatherapi: weatherapiapikey
+
+title: Dashboard
+
+background:
+  image: "https://images.unsplash.com/photo-1493314894560-5c412a56c17c"
+  blur: md         # Options: sm, md, lg, xl (md or lg gives a great premium depth)
+  brightness: 50
+
+useEqualHeights: true
+
+layout:
+  Monitoring:
+    style: row
+    columns: 4
+  Home Lab:
+    style: column
+    columns: 4
+  Media:
+    style: comlumn
+    columns: 4

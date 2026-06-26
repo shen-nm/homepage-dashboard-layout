@@ -1,0 +1,8 @@
+/* Custom Frosted Glass Theme for Cards */
+.bg-card, [class*="Card_card"], [class*="Bookmark_"] {
+    background-color: rgba(15, 15, 15, 0.45) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.06) !important;
+    border-radius: 0.75rem !important;
+}

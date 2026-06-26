@@ -1,0 +1,14 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/settings/
+
+providers:
+  openweathermap: openweathermapapikey
+  weatherapi: weatherapiapikey
+
+background:
+  image: "https://images.unsplash.com/photo-1493314894560-5c412a56c17c"
+ # 
+ blur: sm         # Options: sm, md, lg, xl (md or lg gives a great premium depth)
+  brightness: 50
+   # Darkens the image (0-100) so your white text pops out perfectly

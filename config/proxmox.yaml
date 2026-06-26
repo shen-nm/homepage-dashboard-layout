@@ -1,0 +1,5 @@
+---
+ home-lab:
+   url: https://192.168.8.100:8006
+   token: "{{HOMEPAGE_VAR_PROXMOX_API_USERNAME}}"
+   secret: "{{HOMEPAGE_VAR_PROXMOX_API}}"

@@ -1,0 +1,26 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/bookmarks
+
+- Network:
+    - Router:
+        - abbr: ISP
+          href: https://192.168.8.1/      
+    - Tailscale:
+        - icon: tailscale.png
+          href: https://login.tailscale.com/admin/machines?refreshed=true
+- Domain:
+    - Cloudflare:
+        - icon: cloudflare.png
+          href: https://dash.cloudflare.com/
+    - Tunnels:
+        - icon: cloudflare-zero-trust.png
+          href: https://dash.cloudflare.com/0e7e5f1e680156851236235507b82f23/one/networks/connectors
+- Developer:
+    - Github:
+        - icon: github.png
+          href: https://github.com/shen-nm
+- Me:
+    - Launch Page:
+        - abbr: SM
+          href: https://shenmilan.com
