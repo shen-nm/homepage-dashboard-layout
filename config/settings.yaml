@@ -22,6 +22,6 @@ layout:
   Home Lab:
     style: column
     columns: 4
-  Media:
+  Services:
     style: comlumn
     columns: 4

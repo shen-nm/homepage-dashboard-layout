@@ -84,7 +84,7 @@
       #    url: http://192.168.8.110
       #    version: 6
 
-- Media:
+- Services:
     - Navidrome:
         href: "{{HOMEPAGE_VAR_NAVIDROME_HREF}}"
         icon: navidrome.png
@@ -95,5 +95,12 @@
           user: "{{HOMEPAGE_VAR_NAVIDROME_USERNAME}}"
           token: "{{HOMEPAGE_VAR_NAVIDROME_TOKEN}}"
           salt: "{{HOMEPAGE_VAR_NAVIDROME_SALT}}"
-
+    - SparkyFitness:
+        href: "{{HOMEPAGE_VAR_SPARKYFITNESS_HREF}}"
+        icon: sparky-fitness.png
+        siteMonitor: http://192.168.8.111:3004
+        widget:
+          type: sparkyfitness
+          url: "{{HOMEPAGE_VAR_SPARKYFITNESS_HREF}}"
+          key: "{{HOMEPAGE_VAR_SPARKYFITNESS_API}}"
 
