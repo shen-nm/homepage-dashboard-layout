@@ -1,5 +1,7 @@
 # My personal dashboard for my homelab
 
+Set up Homepage from here: https://github.com/gethomepage/homepage
+
 The metrics on top are from Glances: https://github.com/nicolargo/glances
 
 ## Requirements:
