@@ -13,6 +13,7 @@
 
 - datetime:
     text_size: xl
+    locale: en-GB
     format:
       dateStyle: short
       timeStyle: long
