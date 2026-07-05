@@ -103,4 +103,3 @@
           type: sparkyfitness
           url: http://192.168.8.111:3004
           key: "{{HOMEPAGE_VAR_SPARKYFITNESS_API}}"
-
