@@ -7,7 +7,7 @@
         - abbr: ISP
           href: https://192.168.8.1/      
     - Tailscale:
-        - icon: tailscale.png
+        - icon: si-tailscale
           href: https://login.tailscale.com/admin/machines?refreshed=true
 - Domain:
     - Cloudflare:
@@ -18,12 +18,12 @@
           href: https://dash.cloudflare.com/0e7e5f1e680156851236235507b82f23/one/networks/connectors
 - Developer:
     - Github:
-        - icon: github.png
+        - icon: si-github
           href: https://github.com/shen-nm
 - Me:
     - Portfolio:
         - abbr: SM
           href: https://shenmilan.com
     - Launch Page:
-        - abbr: SM
+        - icon: si-linktree
           href: https://links.shenmilan.com
