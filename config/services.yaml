@@ -103,3 +103,22 @@
           type: sparkyfitness
           url: http://192.168.8.111:3004
           key: "{{HOMEPAGE_VAR_SPARKYFITNESS_API}}"
+    - SMPT2GO:
+        href: https://app.smtp2go.com
+        icon: si-gmail 
+        description: Email Delivery Engine
+        widget:
+          type: customapi
+          url: https://api.smtp2go.com/v3/stats/email_cycle
+          method: POST
+          refreshInterval: 1800000
+          headers:
+            Content-Type: application/json
+            X-Smtp2go-Api-Key: "{{HOMEPAGE_VAR_SMTP2GO_API_KEY}}" 
+          mappings:
+            - field: data.cycle_used
+              label: Sent
+              format: number
+            - field: data.cycle_max
+              label: Total Cap
+              format: number
