@@ -9,7 +9,7 @@ providers:
 title: Dashboard
 
 background:
-  image: "https://images.unsplash.com/photo-1509023464722-18d996393ca8"
+  image: "https://images.unsplash.com/photo-1571293605156-7901b0f38d7b"
   blur: sm         # Options: sm, md, lg, xl (md or lg gives a great premium depth)
   brightness: 50
 
